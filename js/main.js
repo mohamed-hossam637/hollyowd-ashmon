@@ -13,7 +13,7 @@ let backgroundElement = document.querySelector(".main-section") ;
 // create randome image function
 setInterval(function randomImage(){
     let randomNum = Math.floor(Math.random() * images.length) ;
-    backgroundElement.style.backgroundImage = `url(../images/background/${images[randomNum]}.jpg)` ;
+    backgroundElement.style.backgroundImage = `url(./images/background/${images[randomNum]}.jpg)` ;
 } , 10000);
 
 
@@ -97,7 +97,7 @@ prevBtn.onclick = function(){
 }
 
 function checker(){
-    imageSlide.src = `../images/inseid/${img[num]}` ;
+    imageSlide.src = `./images/inseid/${img[num]}` ;
     slideNumber.textContent = `${num+1} / ${img.length}`
 }
 
